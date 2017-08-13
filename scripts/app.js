@@ -13,15 +13,15 @@
 				templateUrl: 'templates/main/developer.html',
 				controller: 'DeveloperController'
 			})
-			.state('photographer', {
-				url: '/photographer',
-				templateUrl: 'templates/main/photographer.html',
-				controller: 'PhotographerController'
+			.state('artist', {
+				url: '/artist',
+				templateUrl: 'templates/main/artist.html',
+				controller: 'ArtistController'
 			})
 			.state('demo-photoshoot', {
 				url: '/demo-photoshoot',
 				templateUrl: 'templates/photoshoots/demo-photoshoot.html',
-				controller: 'PhotographerController'
+				controller: 'ArtistController'
 			})
 			.state('demo-project', {
 				url: '/demo-project',
@@ -35,10 +35,5 @@
 			});
 
 			$urlRouterProvider.otherwise('/developer');
-
-			$locationProvider.html5Mode({
-				enabled: true,
-				requireBase: true
-			});
 		});
 })();

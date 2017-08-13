@@ -1,10 +1,10 @@
 (function() {
 	angular
 		.module('folioGenericApp')
-		.controller('PhotographerController', ['$scope', '$location', '$anchorScroll',
+		.controller('ArtistController', ['$scope', '$location', '$anchorScroll',
 			function($scope, $location, $anchorScroll) {
 				// set page class
-				$scope.pageClass = 'photographer';
+				$scope.pageClass = 'artist';
 
 				// image data array
 				$scope.images = [

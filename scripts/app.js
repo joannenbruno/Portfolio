@@ -34,7 +34,7 @@
 				controller: 'DeveloperController'
 			});
 
-			$urlRouterProvider.otherwise('/developer');
+			$urlRouterProvider.otherwise('/artist');
 
 			$locationProvider.html5Mode({
 				enabled: true,

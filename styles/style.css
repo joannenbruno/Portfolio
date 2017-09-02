@@ -8,14 +8,14 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 3;
+  line-height: 1;
   padding: 10vw 2em;
   text-align: center;
 }
 
-.header-photo {
+.header-art {
   background-color: #3498db;
-  background-image: url("../images/photographer/photo-banner-min.jpg");
+  background-image: url("../images/illustrator/CopicMarkers.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,6 +293,14 @@ header a:hover {
 /*
   Image styles
 */
+.artwork-grid {
+  max-height: 494px;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
 
 .talk-image:hover {
   cursor: pointer;

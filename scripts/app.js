@@ -35,10 +35,5 @@
 			});
 
 			$urlRouterProvider.otherwise('/artist');
-
-			$locationProvider.html5Mode({
-				enabled: true,
-				requireBase: true
-			});
 		});
 })();

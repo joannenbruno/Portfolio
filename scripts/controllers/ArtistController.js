@@ -10,22 +10,22 @@
 				$scope.images = [
 					{
 						"caption":"Demo Photo",
-						"url":"dist/images/illustrator/artworks/Submission.jpg",
-						"alt":"Demo Photo One"
-					},
-					{
-						"caption":"Demo Photo",
-						"url":"dist/images/illustrator/artworks/innerturmoil.jpg",
+						"url":"dist/images/illustrator/artworks/innerturmoil.png",
 						"alt":"Demo Photo Two"
 					},
 					{
 						"caption":"Demo Photo",
-						"url":"dist/images/illustrator/artworks/corvus.jpg",
+						"url":"dist/images/illustrator/artworks/Submission.png",
+						"alt":"Demo Photo One"
+					},
+					{
+						"caption":"Demo Photo",
+						"url":"dist/images/illustrator/artworks/corvus.png",
 						"alt":"Demo Photo Three"
 					},
 					{
 						"caption":"Demo Photo",
-						"url":"dist/images/illustrator/artworks/iris.JPG",
+						"url":"dist/images/illustrator/artworks/iris.png",
 						"alt":"Demo Photo Four"
 					}
 				];

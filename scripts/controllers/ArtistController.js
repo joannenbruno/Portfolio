@@ -9,24 +9,24 @@
 				// image data array
 				$scope.images = [
 					{
-						"caption":"Demo Photo",
+						"caption":"Inner Turmoil - Copic Marker on Smooth Bristol",
 						"url":"dist/images/illustrator/artworks/innerturmoil.png",
-						"alt":"Demo Photo Two"
+						"alt":"Inner Turmoil Copic Marker Illustration"
 					},
 					{
-						"caption":"Demo Photo",
+						"caption":"Submission - Copic Marker and Washi Tape on Smooth Bristol",
 						"url":"dist/images/illustrator/artworks/Submission.png",
-						"alt":"Demo Photo One"
+						"alt":"Submission Copic Marker Washi Tape Illustration"
 					},
 					{
-						"caption":"Demo Photo",
+						"caption":"Corvus - Colored Pencil",
 						"url":"dist/images/illustrator/artworks/corvus.png",
-						"alt":"Demo Photo Three"
+						"alt":"Corvus Colored Pencil Illustration"
 					},
 					{
-						"caption":"Demo Photo",
+						"caption":"Iris - Copic Marker on Smooth Bristol",
 						"url":"dist/images/illustrator/artworks/iris.png",
-						"alt":"Demo Photo Four"
+						"alt":"Iris Copic Marker Illustration"
 					}
 				];
 				

@@ -16,9 +16,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.zmdi-hc-5x {
-  font-size: 5em;
-}
 .zmdi.pull-right {
   float: right;
   margin-left: .15em;
@@ -28,23 +25,20 @@
 .zmdi-close:before {
   content: '\f136';
 }
-.zmdi-collection-plus:before {
-  content: '\f14e';
-}
 .zmdi-email:before {
   content: '\f15a';
 }
 .zmdi-more:before {
   content: '\f19c';
 }
-.zmdi-file-text:before {
-  content: '\f222';
-}
 .zmdi-plus:before {
   content: '\f278';
 }
 .zmdi-github:before {
   content: '\f345';
+}
+.zmdi-instagram:before {
+  content: '\f34f';
 }
 .zmdi-linkedin-box:before {
   content: '\f356';
@@ -52,23 +46,20 @@
 .zmdi-close:before {
   content: '\f136';
 }
-.zmdi-collection-plus:before {
-  content: '\f14e';
-}
 .zmdi-email:before {
   content: '\f15a';
 }
 .zmdi-more:before {
   content: '\f19c';
 }
-.zmdi-file-text:before {
-  content: '\f222';
-}
 .zmdi-plus:before {
   content: '\f278';
 }
 .zmdi-github:before {
   content: '\f345';
+}
+.zmdi-instagram:before {
+  content: '\f34f';
 }
 .zmdi-linkedin-box:before {
   content: '\f356';

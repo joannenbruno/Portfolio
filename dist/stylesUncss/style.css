@@ -8,14 +8,14 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 3;
+  line-height: 1;
   padding: 10vw 2em;
   text-align: center;
 }
 
-.header-photo {
+.header-art {
   background-color: #3498db;
-  background-image: url("../images/photographer/photo-banner-min.jpg");
+  background-image: url("../images/illustrator/CopicMarkers.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,10 +35,10 @@
 
 .headshot-photo {
   display: inline-block;
-  height: 150px;
+  height: 120px;
   vertical-align: top;
-  width: 220px;
-  border-radius: 50px;
+  width: 120px;
+  border-radius: 100px;
   border: 1px solid white;
 
 }
@@ -93,7 +93,7 @@ header a:hover {
 }
 
 .switch label .lever {
-	background-color: #3498db;
+	background-color: #58ACE3 !important;
 	width: 55px;
 }
 
@@ -104,7 +104,7 @@ header a:hover {
 }
 
 .switch label .lever::after {
-	background-color: #3498db;
+	background-color: #3498db !important;
 }
 
 .switch label input[type="checkbox"]:checked + .lever::after {
@@ -288,6 +288,11 @@ header a:hover {
   Image styles
 */
 
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
 .talk-image:hover {
   cursor: pointer;
   opacity: 0.9;
@@ -309,41 +314,8 @@ header a:hover {
   }
 }
 
-.shoot-main-img {
-  cursor: pointer;
-}
-
-.caption {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.caption:hover {
-  color: #ffab40;
-}
-
 .shoot-img {
   margin-bottom: 4em;
-}
-
-.image-overlay-container {
-  position: absolute;
-}
-
-.image-overlay-container i {
-  padding-top: 5px;
-  color: white;
-}
-
-.image-overlay-container i:hover {
-  cursor: pointer;
-  color: #9E4396;
-}
-
-@media all and (max-width: 375px) {
-  .image-overlay-container i {
-    font-size: 3em;
-  }
 }
 
 /*
@@ -376,6 +348,21 @@ header a:hover {
     right: 47px;
     top: 40%;
   }
+}
+
+/*
+  Accessibility
+*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 
 /*

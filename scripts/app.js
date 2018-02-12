@@ -34,6 +34,6 @@
 				controller: 'DeveloperController'
 			});
 
-			$urlRouterProvider.otherwise('/developer');
+			$urlRouterProvider.otherwise('/artist');
 		});
 })();

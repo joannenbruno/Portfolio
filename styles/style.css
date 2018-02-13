@@ -290,6 +290,10 @@ header a:hover {
   font-size: 0.9em;
 }
 
+.dev-button {
+  background: rgba(76, 175, 80, 0.4)
+}
+
 /*
   Image styles
 */

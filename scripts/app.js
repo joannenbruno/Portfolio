@@ -37,6 +37,21 @@
 					url: '/keep-my-casa',
 					templateUrl: 'templates/projects/project-keep-my-casa.html',
 					controller: 'DeveloperController'
+				})
+				.state('u-know-health', {
+					url: '/u-know-health',
+					templateUrl: 'templates/projects/project-u-know-health.html',
+					controller: 'DeveloperController'
+				})
+				.state('medidata', {
+					url: '/medidata',
+					templateUrl: 'templates/projects/project-medidata.html',
+					controller: 'DeveloperController'
+				})
+				.state('sickbay', {
+					url: '/sickbay',
+					templateUrl: 'templates/projects/project-sickbay.html',
+					controller: 'DeveloperController'
 				});
 
 			$urlRouterProvider.otherwise('/developer');

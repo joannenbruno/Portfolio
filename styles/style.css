@@ -291,7 +291,11 @@ header a:hover {
 }
 
 .dev-button {
-  background: rgba(76, 175, 80, 0.4)
+  background: rgba(88, 172, 227, 0.4)
+}
+
+.art-button {
+  background: rgba(76, 122, 175, 0.4)
 }
 
 /*

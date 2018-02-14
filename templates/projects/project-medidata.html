@@ -1,18 +1,141 @@
 <div class="container blog-container">
-	<h1>Keep My Casa</h1>
+	<h1>Medidata: Electronic Health Record (EHR) Functional Prototype</h1>
+
 	<div class="page-nav-options">
 		<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
 	</div>
 	<hr>
+	<em>Medidata is an Electronic Health Record (EHR) functional prototype designed strategically to simplify patient medical data,
+		thereby, allowing doctors to more quickly review patient history prior to visits.</em>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis suscipit ex, id ultrices lacus. Maecenas feugiat blandit massa, malesuada semper mauris vulputate vitae. Duis id leo egestas, lacinia nisl sed, ultricies est. <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Praesent pellentesque fringilla justo</a>, lacinia iaculis velit volutpat vel. Aliquam luctus et quam at varius. Phasellus in elit ultrices, fringilla felis eu, pellentesque est. Ut faucibus tempus dui nec finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse in ante euismod, ultricies sem non, vestibulum turpis. Pellentesque non ultrices felis, id volutpat magna. Quisque pulvinar nunc ut pharetra commodo.</p>
+	<br>
+	<br>
+	<table class="highlight responsive-table">
+		<thead>
+			<tr>
+				<b>PROJECT DETAILS</b>
+			</tr>
+		</thead>
 
-	<div class = "responsive-img-text">
-		<img class = "materialboxed responsive-img" data-caption = "Demo Photo One" src = "dist/images/photographer/photos/demo-photo-one.jpg" alt="Demo Photo One"/>
-		<p>Demo Photo One</p>
-	</div>
+		<tbody>
+			<tr>
+				<td>Need:</td>
+				<td>Hospitals are rapidly adopting Electronic Health Records (EHR) systems. Currently, these systems have an overwhelmingly
+					amount of data stored per patient. Via market research, it was discovered that doctors are spending on average 10-15
+					minutes reading this data before meeting with patients.</td>
+			</tr>
+			<tr>
+				<td>Objective:</td>
+				<td>Develop an interface that increases doctor's productivity using the EHR, thereby reducing patient wait times.</td>
 
-	<div class="page-nav-options">
-		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
-	</div>
+			</tr>
+			<tr>
+				<td>Approach:</td>
+				<td>Designed a web application with four main modules (generic patient information header, ICD9 wheel, timeline of patient’s
+					previous visits, and clinical note session) that utilize a RESTful API to pull data from a mock patient database. The
+					information was structured using: search-centric design, sequential ordering, expandable views, color labeling, and
+					graphical views.</td>
+			</tr>
+			<tr>
+				<td>Project Duration:</td>
+				<td>6 months; Spring 2015</td>
+			</tr>
+			<tr>
+				<td>Group Members:</td>
+				<td>Joanne Bruno, Derek Burgman, Matthew Snyder, Michael Draughon</td>
+			</tr>
+			<tr>
+				<td>My Role(s):</td>
+				<td>UI UX Lead, Front-End Developer, Project Manager, Scribe</td>
+			</tr>
+			<tr>
+				<td>Final Result:</td>
+				<td>Created an interactive EHR web application as a functional prototype to better visualize patient data through the use
+					of a relevancy filterable timeline and by mapping patient history over an ICD9 Tree.</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<hr>
+	<h4>UX Process</h5>
+
+		<h5>I. Plan, Identify, Understand</h5>
+
+		<p>Could you easily understand the following EHR at-a-glance? </p>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Existing EHR" src="dist/images/developer/medidata/existing_ehr.png"
+			 alt="Existing EHR" />
+			<p>Existing EHR</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Application Diagram" src="dist/images/developer/medidata/level_1_diagram.PNG"
+			 alt="Application Diagram" />
+			<p>Application Diagram</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Objective Tree" src="dist/images/developer/medidata/objective_tree.png"
+			 alt="Objective Tree" />
+			<p>Objective Tree</p>
+		</div>
+
+		<h5>II. Iterative Design</h5>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Timeline V1" src="dist/images/developer/medidata/TimelineCrop.jpg"
+			 alt="Timeline" />
+			<p>Timeline V1</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Timeline Filter V1" src="dist/images/developer/medidata/iEHR_Timeline_Filter-01.jpg"
+			 alt="Timeline Filter" />
+			<p>Timeline Filter</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="ICD9 Visualization V1" src="dist/images/developer/medidata/demo-photo-one.jpg"
+			 alt="Demo Photo One" />
+			<p>ICD9 Visualization V1</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="ICD9 Visualization V2" src="dist/images/developer/medidata/ICD9.png"
+			 alt="Demo Photo One" />
+			<p>ICD9 Visualization V2</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Desktop Final Wireframe" src="dist/images/developer/medidata/iEHR_Desktop_Wireframe_02.jpg"
+			 alt="Demo Photo One" />
+			<p>Desktop Final Wireframe</p>
+		</div>
+
+		<h5>III. Development </h5>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Home Page" src="dist/images/developer/medidata/home_page.png"
+			 alt="Home Page" />
+			<p>Home Page</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Patient Search" src="dist/images/developer/medidata/patient_profile.png"
+			 alt="Demo Photo One" />
+			<p>Patient Search</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Patient Profile" src="dist/images/developer/medidata/search_patient.png"
+			 alt="Patient Profile" />
+			<p>Patient Profile Example with All Modules Visible</p>
+		</div>
+
+		<h5>IV. Evaluate</h5>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Final Results" src="dist/images/developer/medidata/results.PNG"
+			 alt="Demo Photo One" />
+			<p>Final Results</p>
+		</div>
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Final Results" src="dist/images/developer/medidata/results2.PNG"
+			 alt="Final Results" />
+			<p>Final Results, cont'd.</p>
+		</div>
+
+
+		<div class="page-nav-options">
+			<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+		</div>
 </div>

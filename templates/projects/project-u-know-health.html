@@ -4,7 +4,10 @@
 		<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
 	</div>
 	<hr>
-	<em>uKnowHealth is an Angular, web application aimed at simplifying health care results data for easier patient access and learning.</em>
+	<em>uKnowHealth is an Angular, web application aimed at simplifying health care results data for easier patient access and learning.
+		This project is unique and special to me, because I had to learn the opposite of what I normally do as an individual contributor
+		(developer/designer). Instead, I learned how to create and manage a business with a UX problem I had a vision to solve.
+	</em>
 
 	<br>
 	<br>
@@ -53,12 +56,64 @@
 	</table>
 	<br>
 	<hr>
-	<h4>UX Process</h4>
-	<h5>I. Plan, Identify, Understand</h5>
+	<h4>Process</h4>
 
-	<h5>II. Iterative Design</h5>
+	<p>In the healthcare industry, I find it increasingly complex to manage and understand my health care data. Before the vision
+		for uKnowHealth occured to me, I had a close relative almost missed a very important abnormality on their health care lab
+		result data (sent via patient portal), which could have been found more quickly if the data was reviewied digitally and
+		translated to a more meaningful result. Luckily, this relative is has a professional degree in medicine, and was able to
+		understand her health care results and notify the doctor for a follow up. Their advanced health literacy saved their life.
+		<br>
+		<br> This situation gave me the following questions: What if this patient had not had the health literacy to be able to understand
+		this data? How can we better enable the general population to increase their health literacy and understand their health
+		care results?</p>
+
+	<h5>I. Plan, Identify, Understand</h5>
+	<p>
+		At startup weekend Hackout, I created a balanced team of strong developers, and a subject matter expert in healthcare. After
+		working through some market research, we found a few interesting points that we wanted to expand on:
+		<br>
+		<br> (1) Searching online for health information is the most well-adopted digital health category, with 40% of those who search
+		acting directly upon what they find.
+		<br> (2) There has been a steady increase in mis diagnoses in recent years. Majority of diagnostic errors could have been prevented
+		if an AI tool could analyze systems and help doctors arrive at a diagnoses.
+
+
+		<br>
+		<br> We put these ideas to the test by conducting a survey in the Austin Domain area. We wanted to identify basic health literacy
+		and where the users go to understand their numbers. Through this study, out of 26 responses, over 61% of patients attempt
+		to search online for more information on their healthcare results. We identified that the majority of respondees were not
+		able to identify what level of blood sugar or cholestoral is high, indicating lower health literacy than expected. When
+		prompted if they would pay for a service that allowed them to better understand their medical information, about 50% suggested
+		that it cost between $15-$90 per month, and others suggested it be free.
+		<br>
+		<br> Based on our findings, our team worked together to develop wireframes for a web application that would allow the use to
+		receive more meaningful results based on their health care data results:
+
+		<img class="materialboxed responsive-img" style="width:50%" data-caption="Questions" src="dist/images/developer/uknowHealth/designing.png"
+		 alt="Design" />
+		<br>
+
+
+	</p>
+
+	<h5>II. Create Business Case</h5>
+
+	<p>Team member Lauren Welch and I ran through our business model to solidify our vision and marketable value. This was a challenging
+	exercise that thoroughly helped me understand what UX problem we are trying to solve and who is it really going to help. I want to use this same methodology for any problem I solve going forward to focus in on the problem statement,
+	use case, and have a solid deliverable.</p>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Questions" src="dist/images/developer/uknowHealth/IMG_1144.JPG" alt="Final Solution"
+		/>
+		<img class="materialboxed responsive-img" data-caption="Questions" src="dist/images/developer/uknowHealth/IMG_1145.JPG" alt="Final Solution"
+		/>
+	</div><br>
 
 	<h5>III. Development</h5>
+
+	<p>The following walkthrough is the final prototype that was made using Angular, HTML5, and CSS3. Please note that to be HIPAA
+		compliant, none of these data values are stored. They are entered manually by the user. </p>
+
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Questions" src="dist/images/developer/uknowHealth/healthuno.gif"
 		 alt="Final Solution" />
@@ -66,13 +121,21 @@
 	</div>
 
 	<h5>IV. Evaluate</h5>
-	<div class="responsive-img-text">
-		<img class="materialboxed responsive-img" data-caption="Pitching to Mock Investors Panel" src="dist/images/developer/uknowHealth/answering_questions.jpg"
+	<p>I delivered a 5 minute pitch to a mock investors panel. The judges asked us many questions on how we were going to get this
+		item to market, knowing that the healthcare industry is highly complex versus other industries. The judges were impressed
+		on how much we delivered over the course of a weekend versus the other teams.
+		<img class="materialboxed responsive-img" style="width:50%" data-caption="Pitching to Mock Investors Panel" src="dist/images/developer/uknowHealth/answering_questions.jpg"
 		 alt="Final Solution" />
-		<p>Pitching to Mock Investors Panel</p>
-	</div>
-	<div class="responsive-img-text">
-		<img class="materialboxed responsive-img" data-caption="Great Team" src="dist/images/developer/uknowHealth/awesome_team.jpg"
+		<br> Overall, we developed a recognized business model, a functional prototype for a web application, a successul project pitch.
+
+		<img class="materialboxed responsive-img" style="width:50%" data-caption="Great Team" src="dist/images/developer/uknowHealth/awesome_team.jpg"
 		 alt="Great Team" />
-		<p>Great Team!</p>
+	</p>
+
+
+	<p>Thank you for reading! If this work interested you, check out some of my other projects in healthcare, such as
+		<a ng-click="go('/medidata')">Medidata</a>
+	</p>
+	<div class="page-nav-options">
+		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
 	</div>

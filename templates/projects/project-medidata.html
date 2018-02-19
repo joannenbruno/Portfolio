@@ -61,17 +61,39 @@
 
 		<h5>I. Plan, Identify, Understand</h5>
 
-		<p>Could you easily understand the following EHR at-a-glance? </p>
+		<p>Could you easily understand the following EHR at-a-glance?
+			<br>
+			<br> With the increase in the number of Electronic Health Record (EHR) systems being installed in modern hospitals, the demand
+			for complex EHR data software solutions has elevated. Although information is now digitized, doctors are still spending
+			additional time sifting through incredulous amounts of information with EHR user interfaces. Sponsors from the VA, Scott
+			And White Hospital, and Texas A&amp;M biomedical engineering have consulted our group in order to develop a software prototype
+			component to reduce the amount of time doctors spend finding relevant details before they begin diagnosis of a patient.
+		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Existing EHR" src="dist/images/developer/medidata/existing_ehr.png"
 			 alt="Existing EHR" />
 			<p>Existing EHR</p>
 		</div>
+		<p>After extensive market research on existing EHRs, we divided designed the application to include the following modules
+			and data flow. These data areas are the most heavily reviewed and contain the most critical information for patient diagnoses.
+		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Application Diagram" src="dist/images/developer/medidata/level_1_diagram.PNG"
 			 alt="Application Diagram" />
 			<p>Application Diagram</p>
 		</div>
+		<p>To deliver a product that would satisfy our client's needs, we identified the following top items to focus on based on
+			our studies and suggestions from client interviews. Our clients heavily emphasized elements involving the user interface,
+			the usability of the application, and the functionality specifications of various components. The user interface needs
+			to contain concise textual information, a method of searching for patients, and be responsive to the various devices with
+			browser capability. This allows for the physician to view the information in a manner that is efficiently organized and
+			allows for a smoother user experience. We identified the engineering requirements needed to fulfill this need.
+			<br>
+			<br> Furthermore, the electronic health record needs to be usable in terms of having a minimal learning curve for the doctors
+			to easily access all information without extensive training and also be accessible from a web browser that is familiar
+			to the majority of users. Functionality should include relevant filters on the textual patient information such as the
+			timeline, data information and retrieval. The application should interface with multiple databases.
+		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Objective Tree" src="dist/images/developer/medidata/objective_tree.png"
 			 alt="Objective Tree" />
@@ -79,18 +101,36 @@
 		</div>
 
 		<h5>II. Iterative Design</h5>
+		<p>The timeline will display only the most pertinent patient visit information for each date listed in the database. Based
+			on the compiled suggestions of interviewed medical physicians, the information displayed in the timeline shall include
+			the ICD9 code diagnosis, type of visit, and chief complaint. In the upper right hand corner, the timeline can be filtered
+			by several options. For example, a physician may choose to view only the patient visits within the past year. Upon selecting
+			a specific date in the timeline, the other modules will update to comply with that specific date. This will allow for
+			the most effective use of space, as the clinical notes for the visit will be relevant and the ICD9 diagnosis of the particular
+			date will be highlighted in the lower left of the screen. The implementation of all the timeline will be accomplished
+			using Cascading Style Sheets (CSS), as the complexity of this module is relatively low.</p>
+
 		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="Timeline V1" src="dist/images/developer/medidata/TimelineCrop.jpg"
+			<img class="materialboxed responsive-img project-img" data-caption="Timeline V1" src="dist/images/developer/medidata/TimelineCrop.jpg"
 			 alt="Timeline" />
 			<p>Timeline V1</p>
 		</div>
 		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="Timeline Filter V1" src="dist/images/developer/medidata/iEHR_Timeline_Filter-01.jpg"
+			<img class="materialboxed responsive-img project-img" data-caption="Timeline Filter V1" src="dist/images/developer/medidata/iEHR_Timeline_Filter-01.jpg"
 			 alt="Timeline Filter" />
 			<p>Timeline Filter</p>
 		</div>
+		<p>The ICD9 tree serves to effectively visualize the nodes visited, in other words, the diagnoses given to the patient in
+			the form of ICD9 codes. Our implementation was in the form of a ring, created using the data-driven documents (D3.js)
+			JavaScript library. This library will help produce an effectively interactive and dynamic visualization of the ICD9 data.
+			Thus, we will be able to achieve improved module performance for standard web browsers to enhance the user experience
+			of the physician. Furthermore, the tree will update to highlight the most relevant nodes based on the dates clicked in
+			the timeline module. For example, if the user would like to see only the ICD9 codes diagnosed for the more recent patient
+			visit on the timeline, he or she may simply can click on the date in the timeline to view the updated nodes on the tree
+			for that visit.
+		</p>
 		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="ICD9 Visualization V1" src="dist/images/developer/medidata/ICD9Visualization.jpg"
+			<img class="materialboxed responsive-img " data-caption="ICD9 Visualization V1" src="dist/images/developer/medidata/ICD9Visualization.jpg"
 			 alt="Demo Photo One" />
 			<p>ICD9 Visualization V1</p>
 		</div>
@@ -99,6 +139,18 @@
 			 alt="Demo Photo One" />
 			<p>ICD9 Visualization V2</p>
 		</div>
+		<p>After analyzing various user interfaces of electronic health records and the compilation of surveyed information from our
+			clients, the following user interface design was proposed by me. In this minimalistic design there is one homepage with expandable
+			views. The user can click on the upper right hand corner of each widget in order to maximize the viewing space and see
+			more information. Furthermore, the timeline has an additional button in the upper right hand corner in order to access
+			filtering functions. When a timeline date is clicked, all relevant information on the screen will automatically in the
+			upper header of the screen, the most pertinent patient information is displayed. Physicians can search patient in the
+			text field in the upper left hand corner under the logo of the application. Patients can be searched by various fields,
+			such as name, patient identification number, and social security. Each widget is clearly identifiable and strives to indicate
+			their affordances. Hierarchical navigation is eliminated in order to reduce the amount of time a physician may spend browsing
+			through the interface to acquire the information he or she may need. Thus, the design efficiently spans to the size of
+			the screen.
+		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Desktop Final Wireframe" src="dist/images/developer/medidata/iEHR_Desktop_Wireframe_02.jpg"
 			 alt="Demo Photo One" />
@@ -106,9 +158,24 @@
 		</div>
 
 		<h5>III. Development </h5>
+		<p>
+			For our website, we have designed four main modules that utilize a RESTful API to pull data from a mock patient database.
+			Our four modules are a header including generic patient information, a timeline of patient’s previous visits, an ICD9
+			wheel highlighting the ICD9 codes that occurred in the patient’s history, and a clinical note section detailing the specifics
+			of a chosen visit in the patient’s history. These four modules are all shown on a single page in the website with the
+			ability to expand modules for better viewing when desired. A key feature that our website provides is the ability to filter
+			the patient’s history based on their current chief complaint, a certain time frame, or for a specific subset of ICD9 codes.
+
+			<br>
+			<br>The framework implementation is built off of a template called “Clip Two” constructed with Bootstrap and AngularJS. Using
+			AngularJS allows us to simplify module implementation and gives us dependency injection. We have modified and added code
+			to the template to best suit our needs in terms of constructing the individual modules
+			<br>
+			<br> We implemented a mock patient database server using WampServer, MySQL, and a RESTFul php interface that will be used
+			to serve our anonymized patient information to be displayed on the website. </p>
 		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="Home Page" src="dist/images/developer/medidata/home_page.png"
-			 alt="Home Page" />
+			<img class="materialboxed responsive-img" data-caption="Home Page" src="dist/images/developer/medidata/home_page.png" alt="Home Page"
+			/>
 			<p>Home Page</p>
 		</div>
 		<div class="responsive-img-text">
@@ -123,18 +190,30 @@
 		</div>
 
 		<h5>IV. Evaluate</h5>
-		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="Final Results" src="dist/images/developer/medidata/results.PNG"
-			 alt="Demo Photo One" />
-			<p>Final Results</p>
-		</div>
-		<div class="responsive-img-text">
-			<img class="materialboxed responsive-img" data-caption="Final Results" src="dist/images/developer/medidata/results2.PNG"
-			 alt="Final Results" />
-			<p>Final Results, cont'd.</p>
-		</div>
+		<p>We have created a complete functional prototype, web application, that has been approved by the biomedical team as well
+			as having passed all the acceptance and integration tests that we formed during the design of the system. This process
+			involved learning how to efficiently collaborate with a hierarchy of clients and the complexities that arise when working
+			with government technologies. The most immediate goal for the future of the project is to attach it to a real patient
+			database rather than the mock patient database that we have been using. We would also like to have included cross-platform
+			and cross-browser support for the website. From a user survey conducted with 15 medical professionals, results indicated
+			that our application was exceptionally user friendly and showed preference for the use or addition of our work into their
+			current EHR system.
+
+			<div class="responsive-img-text">
+				<img class="materialboxed responsive-img" data-caption="Final Results" src="dist/images/developer/medidata/results2.PNG"
+				 alt="Final Results" />
+
+			</div>
+		</p>
+
+		<h5>Click here to see the final application
+			<a href="https://youtu.be/YjVDjoImKgs" target="_blank" rel="noreferrer noopener">walkthrough</a>.</h5>
 
 
+
+		<p>Thank you for reading! If this work interested you, check out some of my other projects in healthcare, such as
+			<a ng-click="go('/sickbay')">Sickbay Analytics</a>.
+		</p>
 		<div class="page-nav-options">
 			<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
 		</div>

@@ -4,8 +4,9 @@
 		<div ng-click="go('/developer')" class="header-back-link" tabindex=0 ng-keydown="($event.which === 13) && go('/developer')">Back</div>
 	</div>
 	<hr>
-	<em>Sickbay Analytics is a D3.js vizualization tool that allows prospective US patients or caregivers to acquire relevant, filtered
-		government data points of health care costs for the top most common medical services, by state or hospital.</em>
+	<em>
+		<a href="https://joannenbruno.github.io/sickbay-viz/" target="_blank" rel="noopener noreferrer">Sickbay Analytics</a> is a D3.js vizualization tool that allows prospective US patients or caregivers to acquire relevant,
+		filtered government data points of health care costs for the top most common medical services, by state or hospital.</em>
 
 	<br>
 	<br>
@@ -58,45 +59,80 @@
 	<hr>
 	<h4>UX Process</h4>
 	<h5>I. Plan, Identify, Understand</h5>
-	<div class="responsive-img-text">
-		<img class="materialboxed responsive-img" data-caption="Data.gov sample" src="dist/images/developer/sickbay/data_sample.PNG"
-		 alt="Data Sample" />
-		<p>Data.gov sample</p>
-	</div>
+	<p>Health care costs are rising and one of the top challenges the healthcare industry is facing, is the lack of transparancy.
+		There are plenty of data sets available on data.gov, however, these data assets are not visualized in a meaninful manner
+		that provides data insights.
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Data.gov sample" src="dist/images/developer/sickbay/data_sample.PNG"
+			 alt="Data Sample" />
+		</div>
+	</p>
+	In order to tackle this problem, my team member Bradley and I set out to understand how the end user may benefit from a software
+	solution that would enable them to better understand health care costs trends. We focused first on a prospective patient
+	in the United States, seeking to become more informed on the cost of their health care service in their state.
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Data.gov sample" src="dist/images/developer/sickbay/storyboarding.PNG"
 		 alt="Data Sample" />
 		<p>Storyboarding</p>
 	</div>
-	<div class="responsive-img-text">
-		<img class="materialboxed responsive-img" data-caption="Data.gov sample" src="dist/images/developer/sickbay/d3_inspo.PNG"
-		 alt="Data Sample" />
-		<p>Design Inspiration from D3.js Library</p>
-	</div>
+
+	<p>In order to best visualize the data, and make it interactive and customizable to the user's needs, I chose to design the
+		tool's visualizations using Data Driven Documents, or better known as
+		<a href="https://d3js.org/" target="_blank" rel="noreferrer noopener">
+			D3.js</a> library.
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Data.gov sample" src="dist/images/developer/sickbay/d3_inspo.PNG"
+			 alt="Data Sample" />
+		</div>
+	</p>
+
 
 	<h5>II. Iterative Design</h5>
+	<p>The biggest challenge of this project was how to organize an overwhelmingly amount of data and make some meaningful insights
+		out of it. We wanted to allow the user to filter costs by service, state, and hospital. </p>
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Data Flowchart" src="dist/images/developer/sickbay/ux_flowchart.PNG"
 		 alt="Data Flowchart" />
-		<p>Data Flowchart</p>
 	</div>
+	<p>Using
+		<a href="https://balsamiq.com/" target="_blank" rel="noopener noreferrer">Balsamiq</a> mockup tooling, I designed wireframes to Identify how best to organize the various visualizations we were
+		creating and their corresponding interactions. I later iterated on these using Adobe Illustrator. The biggest change was
+		a step progress tool to indicate a path a user could flow to gain service cost insights while using the application. After
+		the third iteration, I discoverd that the US map was the focal point of the site, and really did not add much value. Therefore,
+		I removed the map and revisted the charts I chose. I ended up moving forward with a scatter plor to better uniquely identify
+		data for each data point.</p>
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Mockups V1" src="dist/images/developer/sickbay/mockups.PNG" alt="Mockups V1"
 		/>
-		<p>Mockups V1</p>
+
 	</div>
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Mockups V2" src="dist/images/developer/sickbay/illustrator_mockup.PNG"
 		 alt="Mockups V2" />
-		<p>Mockups V2</p>
 	</div>
-
+	<br>
 
 	<h5>III. Development</h5>
+	<p>Bradley and I translated the wireframes into the final design, which emcompasses two D3.js visualizations that can be filtered
+		with the dropdowns in the upper portion of the websites body. Data points, when hovered upon, provide details such as hospital
+		or cost. To keep the design consistent and quickly mock out the UI with a playful color pattern, I chose to use Materialize
+		CSS.
+	</p>
+
 	<div class="responsive-img-text">
 		<img class="materialboxed responsive-img" data-caption="Final Solution" src="dist/images/developer/sickbay/sickbay_main.PNG"
 		 alt="Final Solution" />
 		<p>Final Solution</p>
 	</div>
 
-	<h5>IV. Evaluate</h6>
+	<h5>IV. Evaluate</h5>
+	<p>Overall, in this project we developed an easily accessible, web visualization tool that allows prospective US patients or
+		caregivers to inquire average health care costs for the top most common medical services, by state or hospital. This tool
+		provides data insights in a more accessible and transparent manner than in an excel dataset. <br><br>
+
+		Thank you for reading! If this work interested you, check out a more recent project I did in healthcare, such as
+				<a ng-click="go('/u-know-health')">uKnowHealth</a>.
+			</p>
+			<div class="page-nav-options">
+				<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+			</div>

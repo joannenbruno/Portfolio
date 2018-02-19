@@ -315,6 +315,10 @@ header a:hover {
   margin: 0 auto;
 }
 
+.project-img {
+  width: 30%;
+}
+
 .talk-image:hover {
   cursor: pointer;
   opacity: 0.9;

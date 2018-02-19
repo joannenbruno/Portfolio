@@ -57,52 +57,89 @@
 	</table>
 	<br>
 	<hr>
-	<h4>UX Process</h5>
-		<h5>I. Plan, Identify, Understand</h6>
-			<div class="responsive-img-text">
-				<img class="materialboxed responsive-img" data-caption="Housing Programs" src="dist/images/developer/keepmycasa/housing_programs.PNG"
-				 alt="Data Sample" />
-				<p>Housing Programs -> Theres alot of data</p>
-			</div>
+	<h4>UX Process</h4>
+	<h5>I. Plan, Identify, Understand</h5>
+	<p>Austin, Texas in recent years has had a sharp increase in property taxes, sometimes at 25 to 30 percent. For some homeowners,
+		especially those who are low-income, elderly, or retired, this increase is forcing them to sell or leave their properties.
+		At the time of the project, there are many resources available online for property owners at risk for losing their homes.
+		However, this information is scattered across various sites, not readily accessible, and can be cumbersome for the homeowner
+		to narrow down to their specific needs. We created the Keep My Casa web application to help address this civic need.
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Housing Programs" src="dist/images/developer/keepmycasa/housing_programs.PNG"
+			 alt="Housing Programs" />
 
-			<h5>II. Iterative Design</h6>
+		</div>
 
-				<div class="responsive-img-text">
-					<img class="materialboxed responsive-img" data-caption="Mockups V1" src="dist/images/developer/keepmycasa/keep_my_casa.map.svg"
-					 alt="Mockups V1" />
-					<p>Flow Diagram</p>
-				</div>
-				<div class="responsive-img-text">
-					<img class="materialboxed responsive-img" data-caption="Mockups V2" src="dist/images/developer/keepmycasa/mockUIFlow.gif"
-					 alt="Mockups V2" />
-					<p>Interactive Mockup To Test Flow Diagram</p>
-				</div>
-				<div class="responsive-img-text">
-					<img class="materialboxed responsive-img" data-caption="Logo Design" src="dist/images/developer/keepmycasa/kmcLogo.svg" alt="Logo Design"/>
-					<p>Logo Design</p>
-				</div>
+	</p>
+	<h5>II. Iterative Design</h5>
+	<p>After compiling list of resources into an excel document, and identifying the target audience, our team collectively whiteboarded
+		a user flow of question prompts to direct the homeowner to customized results based on their responses. Through our market
+		research, we identified that typically low-income or low-literate users prefer a "chat" interface and have higher access
+		to a mobile interface versus a desktop. Therefore we geared our flow to be more conversational and simplified.
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="User flow diagram" src="dist/images/developer/keepmycasa/keep_my_casa.map.svg"
+			 alt="User flow diagram" />
+		</div>
+	</p>
+	<p>Before beginning the development phase, a mock form was created based on the designed flow. We consulted with industry experts
+		in this area to better adjust the language used and iterate on simplification of the UI. The biggest challenge was reducing
+		the complexity of the question selection processes, as this task can be difficult for novice tech users.
+		<div class="responsive-img-text center-img">
+			<img class="materialboxed responsive-img" data-caption="Mockups V2" src="dist/images/developer/keepmycasa/mockUIFlow.gif"
+			 alt="Mockups V2" />
 
-				<h5>III. Development</h6>
-					<div class="responsive-img-text">
-						<img class="materialboxed responsive-img" data-caption="Landing Page" src="dist/images/developer/keepmycasa/landing_(iPad).png"
-						 alt="Final Solution" />
-						<p>Landing Page</p>
-					</div>
-					<div class="responsive-img-text">
-						<img class="materialboxed responsive-img" data-caption="Questions" src="dist/images/developer/keepmycasa/Q1_(iPad).png" alt="Final Solution"
-						/>
-						<p>Questions</p>
-					</div>
+		</div>
+	</p>
+	<p>After completing the mockups, I designed our logo going forward to symbolize the support and strength we wish to provide
+		through this service, at their time of need. At this point we chose our name to be the bilingual title: "Keep My Casa",
+		since through our reseach we discovered that the majority of those at risk of losing their homes in Austin, Texas are hispanic.
+		In future work, I hope to fully translate our application to Spanish to better accomodate those users.
+		<div class="responsive-img-text">
+			<img class="materialboxed responsive-img" data-caption="Logo Design" src="dist/images/developer/keepmycasa/kmcLogo.svg" alt="Logo Design"
+			/>
 
-					<h5>IV. Evaluate</h6>
-						<div class="responsive-img-text">
-							<img class="materialboxed responsive-img" data-caption="Presentation and Future Work" src="dist/images/developer/keepmycasa/kmc_presentation.PNG"
-							 alt="Final Solution" />
-							<p>Presentation and Future Work</p>
-						</div>
-						<div class="responsive-img-text">
-							<img class="materialboxed responsive-img" data-caption="Great Team" src="dist/images/developer/keepmycasa/kmc_working.PNG"
-							 alt="Great Team" />
-							<p>Great Team!</p>
-						</div>
+		</div>
+	</p>
+	<h5>III. Development</h5>
+	<p>The wireframes were translated into a fully functional, mobile-first, web application the aligned with our user flow mockup.
+		The UI was developed using AngularJS, AngularJs Material, HTML, and CSS. This technolgy stack enabled the developers to
+		quickly prototype the app while keeping design consistency in mind.</p>
+	<div class="responsive-img-text">
+		<div class="row">
+			<img class="materialboxed responsive-img project-img" data-caption="Landing Page" src="dist/images/developer/keepmycasa/127.0.0.1_8080_(iPhone 8 Plus).png"
+			 alt="Landing Page" />
+			<img class="materialboxed responsive-img project-img" data-caption="Question" src="dist/images/developer/keepmycasa/127.0.0.1_8080_(iPhone 8 Plus) (5).png"
+			 alt="Question" />
+			<img class="materialboxed responsive-img project-img" data-caption="End Result" src="dist/images/developer/keepmycasa/127.0.0.1_8080_(iPad).png"
+			 alt="End Result" />
+		</div>
+	</div>
+
+	<h5>IV. Evaluate</h5>
+	<p>Through Keep My Casa, I learned the value of keeping accesibility and design in mind for low-literate, tech novice, or elderly
+		users. I now apply web accessibiliy guideline principles <a href="https://www.w3.org/WAI/intro/wcag" target="_blank" rel="noreferrer noopener">(WCAG)</a> through my more recent projects, as they enable the general
+		population to have a greater experience with your app.
+		<br>
+		<br> This project was awarded best design at the hackathon, for its use of accesibility principles with the end user in mind
+		and its overall visual aesthetic.
+		<br>
+		<br> This project was later presented in front of city representatives at a Open Austin Civic meetup. For future work, we hope
+		to solidify a minimum viable product that can be released to the public.
+	</p>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Presentation and Future Work" src="dist/images/developer/keepmycasa/kmc_presentation.PNG"
+		 alt="Final Solution" />
+	</div>
+	<div class="responsive-img-text">
+		<img class="materialboxed responsive-img" data-caption="Great Team" src="dist/images/developer/keepmycasa/kmc_working.PNG"
+		 alt="Great Team" />
+			<p>Thank you for reading! If this work interested you, check out some other projects I have been up to 
+				<a ng-click="go('/developer')">here</a>
+			</p>
+	</div>
+
+
+	<div class="page-nav-options">
+		<div ng-click="backToTop()" class="scroll-top-link">Back to Top</div>
+	</div>
 </div>

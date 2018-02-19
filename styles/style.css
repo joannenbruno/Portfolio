@@ -224,6 +224,14 @@ header a:hover {
 }
 
 /*
+  Footer styles
+*/
+
+.footer-links > a:hover {
+  text-decoration: underline;
+}
+
+/*
   Development-Process styles
 */
 

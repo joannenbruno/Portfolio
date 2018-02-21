@@ -76,6 +76,7 @@
 		</div>
 		<p>After extensive market research on existing EHRs, we divided designed the application to include the following modules
 			and data flow. These data areas are the most heavily reviewed and contain the most critical information for patient diagnoses.
+			*Note: All of the data we used is mock patient data to comply with HIPAA.
 		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Application Diagram" src="dist/images/developer/medidata/level_1_diagram.PNG"
@@ -140,16 +141,16 @@
 			<p>ICD9 Visualization V2</p>
 		</div>
 		<p>After analyzing various user interfaces of electronic health records and the compilation of surveyed information from our
-			clients, the following user interface design was proposed by me. In this minimalistic design there is one homepage with expandable
-			views. The user can click on the upper right hand corner of each widget in order to maximize the viewing space and see
-			more information. Furthermore, the timeline has an additional button in the upper right hand corner in order to access
-			filtering functions. When a timeline date is clicked, all relevant information on the screen will automatically in the
-			upper header of the screen, the most pertinent patient information is displayed. Physicians can search patient in the
-			text field in the upper left hand corner under the logo of the application. Patients can be searched by various fields,
-			such as name, patient identification number, and social security. Each widget is clearly identifiable and strives to indicate
-			their affordances. Hierarchical navigation is eliminated in order to reduce the amount of time a physician may spend browsing
-			through the interface to acquire the information he or she may need. Thus, the design efficiently spans to the size of
-			the screen.
+			clients, the following user interface design was proposed by me. In this minimalistic design there is one homepage with
+			expandable views. The user can click on the upper right hand corner of each widget in order to maximize the viewing space
+			and see more information. Furthermore, the timeline has an additional button in the upper right hand corner in order to
+			access filtering functions. When a timeline date is clicked, all relevant information on the screen will automatically
+			in the upper header of the screen, the most pertinent patient information is displayed. Physicians can search patient
+			in the text field in the upper left hand corner under the logo of the application. Patients can be searched by various
+			fields, such as name, patient identification number, and social security. Each widget is clearly identifiable and strives
+			to indicate their affordances. Hierarchical navigation is eliminated in order to reduce the amount of time a physician
+			may spend browsing through the interface to acquire the information he or she may need. Thus, the design efficiently spans
+			to the size of the screen.
 		</p>
 		<div class="responsive-img-text">
 			<img class="materialboxed responsive-img" data-caption="Desktop Final Wireframe" src="dist/images/developer/medidata/iEHR_Desktop_Wireframe_02.jpg"
@@ -169,7 +170,7 @@
 			<br>
 			<br>The framework implementation is built off of a template called “Clip Two” constructed with Bootstrap and AngularJS. Using
 			AngularJS allows us to simplify module implementation and gives us dependency injection. We have modified and added code
-			to the template to best suit our needs in terms of constructing the individual modules
+			to the template to best suit our needs in terms of constructing the individual modules.
 			<br>
 			<br> We implemented a mock patient database server using WampServer, MySQL, and a RESTFul php interface that will be used
 			to serve our anonymized patient information to be displayed on the website. </p>

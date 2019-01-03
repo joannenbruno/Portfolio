@@ -8,7 +8,7 @@
     "test": "test",
     "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },
-  "author": "Jeremy A. Cantu",
+  "author": "Joanne N. Bruno",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",

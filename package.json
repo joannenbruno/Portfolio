@@ -1,7 +1,7 @@
 {
-  "name": "foliogeneric",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Generic portfolio site template for the multi-faceted developer",
+  "description": "Joanne N. Bruno's UX portfolio",
   "main": "index.js",
   "scripts": {
     "start": "gulp",

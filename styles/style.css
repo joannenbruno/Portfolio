@@ -4,7 +4,7 @@
 
 .header-dev {
   background-color: #3498db;
-  background-image: url("../images/developer/developer-header.jpeg");
+  background-image: url("../images/developer/UXDesigner.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,6 @@
   vertical-align: top;
   width: 120px;
   border-radius: 100px;
-  border: 1px solid white;
 }
 
 .headshot-photo {
@@ -39,8 +38,6 @@
   vertical-align: top;
   width: 120px;
   border-radius: 100px;
-  border: 1px solid white;
-
 }
 
 header h1 {

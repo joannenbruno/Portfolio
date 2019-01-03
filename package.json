@@ -4,6 +4,7 @@
   "description": "Generic portfolio site template for the multi-faceted developer",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "test",
     "precache": "sw-precache --verbose --config=sw-precache-config.js"
   },

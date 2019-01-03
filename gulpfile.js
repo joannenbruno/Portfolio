@@ -38,7 +38,7 @@ var destConfig = {
 }
 
 // browser-sync task
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', done => {
 	browserSync.init({
 		files: [config.paths.files],
 		browser: config.browser,
@@ -48,6 +48,7 @@ gulp.task('browser-sync', function () {
 			middleware: [historyApiFallback()]
 		}
 	});
+	done();
 });
 
 // image task
@@ -58,20 +59,20 @@ gulp.task('images', function () {
 });
 
 // scripts task
-gulp.task('scripts', ['controller-scripts'], function () {
-	return gulp.src(config.paths.javascript)
-		.pipe(concat('bundle.js'))
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest(destConfig.paths.javascript))
-});
-
-// scripts task
 gulp.task('controller-scripts', function () {
 	return gulp.src(config.paths.angularControllersJs)
 		.pipe(sourcemaps.init())
 		.pipe(concat('controllerBundle.js'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(destConfig.paths.javascript))
+});
+
+// scripts task
+gulp.task('scripts', gulp.series('controller-scripts'), function () {
+	return gulp.src(config.paths.javascript)
+		.pipe(concat('bundle.js'))
+		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest(destConfig.paths.javascript))
 });
 
@@ -100,13 +101,15 @@ gulp.task('crass', function () {
 
 // watch task for any html/js changes
 gulp.task('watch', function () {
-	gulp.watch(config.paths.js, ['lint']);
-	gulp.watch(config.paths.angularControllersJs, ['lint']);
-	gulp.watch(config.paths.javascript, ['scripts']);
-	gulp.watch(config.paths.angularControllersJs, ['controller-scripts']);
-	gulp.watch(config.paths.images, ['images']);
-	gulp.watch(config.paths.styles, ['crass']);
+	gulp.watch(config.paths.javascript, gulp.series('lint'));
+	gulp.watch(config.paths.angularControllersJs, gulp.series('lint'));
+	gulp.watch(config.paths.javascript, gulp.series('scripts'));
+	gulp.watch(config.paths.angularControllersJs, gulp.series('controller-scripts'));
+	gulp.watch(config.paths.images, gulp.series('images'));
+	gulp.watch(config.paths.styles, gulp.series('crass'));
 });
 
+const defaultTasks = gulp.parallel('browser-sync', 'watch')
+
 // default gulp tasks
-gulp.task('default', ['browser-sync', 'watch'], function () { });
+gulp.task('default', defaultTasks, function () { });

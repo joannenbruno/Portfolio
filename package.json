@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Joanne N. Bruno's UX portfolio",
+  "description": "Joanne N. Bruno's design portfolio",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
